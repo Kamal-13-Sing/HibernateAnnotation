@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	
+	<!-- hibernate configuration XML based -->
+	<hibernate-configuration>
+		<session-factory>
+			<property name="connection.driverClass">com.mysql.jdbc.Driver</property>
+			<property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+			<property name="connection.username">root</property>
+			<property name="connection.password"></property>
+			<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+			<property name="hbm2ddl.auto">update</property>
+			
+			<!-- below two line is option and avobe 6 is compalsory  -->
+			
+			<property name="showSql">true</property>
+			<property name="formateSql">true</property>
+		</session-factory>
+	
+	</hibernate-configuration>
+ 
